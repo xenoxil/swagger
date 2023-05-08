@@ -10,6 +10,13 @@
   "schemes": [
     "http"
   ],
+  "securityDefinitions": {
+    "cookieAuth": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "xenBlogApiToken"
+    }
+  },
   "components": {
     "securitySchemes": {
       "cookieAuth": {
@@ -139,7 +146,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "cookieAuth": []
+          }
+        ]
       }
     },
     "/posts/{paramName}": {
@@ -160,7 +172,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "cookieAuth": []
+          }
+        ]
       },
       "patch": {
         "description": "",
@@ -191,7 +208,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "cookieAuth": []
+          }
+        ]
       },
       "delete": {
         "description": "",
@@ -210,7 +232,12 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          {
+            "cookieAuth": []
+          }
+        ]
       }
     }
   }
