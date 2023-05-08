@@ -5,7 +5,7 @@ import swager from '../swagger/output.json';
 function App() {
   return (
     <div className="App">
-      <SwaggerUI url={`${swager}`} />
+      <SwaggerUI url={`../swagger/output.json`} />
     </div>
   );
 }
