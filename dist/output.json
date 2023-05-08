@@ -110,7 +110,7 @@
     },
     "/posts/": {
       "post": {
-        "description": "",
+        "description": "создать пост",
         "tags": [
           "posts"
         ],
@@ -142,7 +142,7 @@
     },
     "/posts/{paramName}": {
       "get": {
-        "description": "",
+        "description": "получить страницу с постами",
         "tags": [
           "posts"
         ],
@@ -166,7 +166,7 @@
         ]
       },
       "patch": {
-        "description": "",
+        "description": "обновить пост по id",
         "tags": [
           "posts"
         ],
@@ -202,7 +202,7 @@
         ]
       },
       "delete": {
-        "description": "",
+        "description": "удалить пост по id",
         "tags": [
           "posts"
         ],
