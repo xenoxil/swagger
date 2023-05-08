@@ -13,7 +13,7 @@
   "securityDefinitions": {
     "cookieAuth": {
       "type": "apiKey",
-      "in": "header",
+      "in": "cookie",
       "name": "xenBlogApiToken"
     }
   },
@@ -181,7 +181,7 @@
             "name": "body",
             "in": "body",
             "schema": {
-              "type": "object",
+              "type": "string",
               "properties": {
                 "message": {
                   "example": "string"
