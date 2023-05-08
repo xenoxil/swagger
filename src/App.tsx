@@ -5,7 +5,7 @@ import swager from '../swagger/output.json';
 function App() {
   return (
     <div className="App">
-      <SwaggerUI url={`../swagger/output.json`} />
+      <SwaggerUI url={`/home/xenoxil/swagger/swagger/output.css`} />
     </div>
   );
 }
